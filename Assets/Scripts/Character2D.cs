@@ -16,9 +16,10 @@ public class Character2D : MonoBehaviour
 
     [SerializeField] protected float moveSpeed = 7f;
 
+    //Raycast
     [SerializeField]
     Color rayColor = Color.magenta;
-    [SerializeField,Range(1f,20f)]
+    [SerializeField,Range(0.1f, 5f)]
     float rayDistance = 5f;
     [SerializeField]
     LayerMask groundLayer;
@@ -30,8 +31,8 @@ public class Character2D : MonoBehaviour
         anim = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
     }
-
-    void FixedUpdate()
+/*
+    void FixedUpdate() 
     {
         if(Grounding)
         {
@@ -40,7 +41,7 @@ public class Character2D : MonoBehaviour
                 rb2D.AddForce(Vector2.up * jumpForce,ForceMode2D.Impulse);
             }
         }
-    }
+    }*/
 
    protected bool FlipSprite
     {
@@ -54,6 +55,7 @@ public class Character2D : MonoBehaviour
         get => Physics2D.Raycast(transform.position, Vector2.down, rayDistance, groundLayer);
     }
 
+    //Con este se pinta el ray Color 
     void OnDrawGizmosSelected()
     {
 

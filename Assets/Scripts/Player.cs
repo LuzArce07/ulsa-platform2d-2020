@@ -19,7 +19,7 @@ public class Player : Character2D
         anim.SetFloat("axisX", Mathf.Abs(GameplaySystem.Axis.x));
         
         anim.SetBool("grounding", Grounding);
-
+        
         if(GameplaySystem.JumpBtn)
         {
             anim.SetTrigger("jump");
