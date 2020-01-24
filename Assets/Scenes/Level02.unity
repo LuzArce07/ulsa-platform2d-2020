@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3873609f76c7d9348969bbf7514c0fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 7
+  jumpForce: 2.18
   moveSpeed: 7
   rayColor: {r: 1, g: 0, b: 1, a: 1}
   rayDistance: 1.9

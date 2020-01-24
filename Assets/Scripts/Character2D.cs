@@ -31,18 +31,8 @@ public class Character2D : MonoBehaviour
         anim = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
     }
-/*
-    void FixedUpdate() 
-    {
-        if(Grounding)
-        {
-            if(GameplaySystem.JumpBtn)
-            {
-                rb2D.AddForce(Vector2.up * jumpForce,ForceMode2D.Impulse);
-            }
-        }
-    }*/
 
+    
    protected bool FlipSprite
     {
         //Operacion ternaria
