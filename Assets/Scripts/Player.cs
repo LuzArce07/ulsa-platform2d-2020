@@ -37,4 +37,6 @@ public class Player : Character2D
         anim.SetFloat("axisX", Mathf.Abs(GameplaySystem.Axis.x));
         
     }
+
 }
+
