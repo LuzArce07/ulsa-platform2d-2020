@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - collectable
   layers:
   - Default
   - TransparentFX
@@ -43,6 +44,9 @@ TagManager:
     locked: 0
   - name: ground
     uniqueID: 2534335411
+    locked: 0
+  - name: collectable
+    uniqueID: 1437702159
     locked: 0
   - name: player
     uniqueID: 3983331057

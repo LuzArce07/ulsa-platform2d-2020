@@ -6,6 +6,9 @@ using Platform2DUtils.GameplaySystem;
 
 public class Player : Character2D
 {
+    [SerializeField]
+    Score score;
+
       void Update()
     {
         GameplaySystem.TMovementDelta(this.transform,moveSpeed);
@@ -24,6 +27,7 @@ public class Player : Character2D
                 anim.SetTrigger("jump");
                 GameplaySystem.Jump(rb2D,jumpForce);
             }
+
         }
 
         anim.SetBool("grounding", Grounding);
@@ -37,6 +41,19 @@ public class Player : Character2D
         anim.SetFloat("axisX", Mathf.Abs(GameplaySystem.Axis.x));
         
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if(other.CompareTag("collectable"))
+        {
+            Collectable collectable = other.GetComponent<Collectable>();
+            score.AddPoints(collectable.Points);
+            Destroy(other.gameObject);
+        }
+
+    }
+
 
 }
 
