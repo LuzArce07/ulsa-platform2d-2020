@@ -45,8 +45,26 @@ TagManager:
   - name: ground
     uniqueID: 2534335411
     locked: 0
+  - name: treeBig
+    uniqueID: 831589569
+    locked: 0
+  - name: treeNormal
+    uniqueID: 786128953
+    locked: 0
+  - name: bush
+    uniqueID: 743804693
+    locked: 0
+  - name: stone
+    uniqueID: 1118883563
+    locked: 0
+  - name: grass
+    uniqueID: 2045994403
+    locked: 0
   - name: collectable
     uniqueID: 1437702159
+    locked: 0
+  - name: leaf
+    uniqueID: 4108110487
     locked: 0
   - name: player
     uniqueID: 3983331057
