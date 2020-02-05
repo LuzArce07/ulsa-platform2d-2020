@@ -66,6 +66,9 @@ TagManager:
   - name: leaf
     uniqueID: 4108110487
     locked: 0
+  - name: enemy
+    uniqueID: 670499119
+    locked: 0
   - name: player
     uniqueID: 3983331057
     locked: 0

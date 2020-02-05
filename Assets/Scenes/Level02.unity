@@ -826,8 +826,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 670499119
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5ab9c9cc11264b3418278e7f59aab737, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -848,8 +848,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149639186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.92, y: -2.22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.62, y: -2, z: 0}
+  m_LocalScale: {x: 1.6055, y: 1.6055, z: 1.6055}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -867,6 +867,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  delay: 0
+  dir: {x: 0, y: 0}
 --- !u!1 &179656166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,7 +2484,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000b3e30e97c10c91313960db2e158f552cebceb042a365f3790f98b15597cadcf4f1ce6ced
+  m_ApplyToSortingLayers: 00000000b3e30e97c10c91313960db2e158f552cebceb042a365f3790f98b15597cadcf42f01f727f1ce6ced
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -3218,7 +3220,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -311636239
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 8793639957104055765, guid: ba20e5f425c10ff4ebefe52d3a7ba83f,
     type: 3}
@@ -3338,7 +3340,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000b3e30e97c10c91313960db2e158f552cebceb042a365f3790f98b15597cadcf4f1ce6ced
+  m_ApplyToSortingLayers: 00000000b3e30e97c10c91313960db2e158f552cebceb042a365f3790f98b15597cadcf42f01f727f1ce6ced
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
