@@ -33,18 +33,20 @@ public class Character2D : MonoBehaviour
     }
 
     
+    /*
    protected bool FlipSprite
     {
         //Operacion ternaria
         // condicion ? si es verdad : si es falso
         get => GameplaySystem.Axis.x < 0f ? true : GameplaySystem.Axis.x > 0 ? false : spr.flipX;
     }
+    */
 
     protected bool Grounding
     {
         get => Physics2D.Raycast(transform.position, Vector2.down, rayDistance, groundLayer);
     }
-
+    
     //Con este se pinta el ray Color 
     void OnDrawGizmosSelected()
     {

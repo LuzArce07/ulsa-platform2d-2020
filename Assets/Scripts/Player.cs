@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEngine.UI;
-
 using Platform2DUtils.GameplaySystem;
 
 public class Player : Character2D
@@ -38,7 +36,10 @@ public class Player : Character2D
     //hace lo mismo que el update pero se ejecuta despues de el
     void LateUpdate()
     {
-        spr.flipX = FlipSprite;
+        //spr.flipX = FlipSprite;
+        IFlip flip = new PlayerFlip();
+        spr.flipX = flip.FlipSprite(GameplaySystem.Axis.x, spr);
+
         anim.SetFloat("axisX", Mathf.Abs(GameplaySystem.Axis.x));
         
     }
