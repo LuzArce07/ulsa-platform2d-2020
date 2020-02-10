@@ -32,6 +32,17 @@ namespace Platform2DUtils.GameplaySystem
             t.Translate(Vector2.right * moveSpeed * Time.deltaTime * Axis.x);
         }
 
+         /// <summary>
+        /// Moves player in Horizontal axis with keyboard inputs using time.
+        /// </summary>
+        /// <param name="rb2D">Rigidbody2D component of the player</param>
+        /// <param name="moveSpeed">The coefficient of speed</param>
+
+        public static void MovementAddForce(Rigidbody2D rb2D, float moveSpeed)
+        {
+            rb2D.AddForce(Vector2.right * moveSpeed * Axis.x, ForceMode2D.Impulse);
+        }
+
         /// <summary>
         /// Returns if jump button was buttondown
         /// </summary>
@@ -47,6 +58,12 @@ namespace Platform2DUtils.GameplaySystem
             rb2D.AddForce(Vector2.up * jumpForce,ForceMode2D.Impulse);
         }
 
+
+
     }
+
+
+
 }
+
 

@@ -803,6 +803,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b18e093e07946274cbda62ad48970481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpForce: 7
+  moveSpeed: 3
+  rayColor: {r: 1, g: 0, b: 1, a: 1}
+  rayDistance: 5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   moveSpeed: 3
   delay: 2
   dir: {x: 1, y: 0}
@@ -2893,7 +2900,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.920044, y: -13.089996}
+  m_AnchoredPosition: {x: -4.920044, y: -13.090027}
   m_SizeDelta: {x: 226.94, y: 54.27}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1103946872
@@ -3262,13 +3269,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3873609f76c7d9348969bbf7514c0fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 2.98
+  jumpForce: 4.19
   moveSpeed: 7
   rayColor: {r: 1, g: 0, b: 1, a: 1}
   rayDistance: 1.9
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
+  maxVel: 5
 --- !u!50 &1266854936
 Rigidbody2D:
   serializedVersion: 4
