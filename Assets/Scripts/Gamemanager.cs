@@ -14,7 +14,15 @@ public class Gamemanager : MonoBehaviour
     void Awake()
     {
         
-        instance = this;
+        
+        if(instance)
+        {
+            Destroy(gameObject);
+        } else 
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
 
     }
 
