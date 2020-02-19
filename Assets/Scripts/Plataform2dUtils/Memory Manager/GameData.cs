@@ -1,18 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class NewBehaviourScript : MonoBehaviour
+//para convertir datos
+[Serializable]
+
+public class GameData
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField]
+    Player player;
+
+    public Player Player
     {
-        
+        get => player;
+        set => player = value;
     }
+    
+
 }
