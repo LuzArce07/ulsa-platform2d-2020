@@ -21,6 +21,11 @@ public class Player : Character2D
         {
             if(Grounding)
             {
+
+                Gamemanager.instance.gameData.PlayerPos = transform.position;
+                //Debug.Log(Gamemanager.instance.gameData.Player);
+                Gamemanager.instance.Save();
+
                 anim.SetTrigger("jump");
                 GameplaySystem.Jump(rb2D, jumpForce);
             }
