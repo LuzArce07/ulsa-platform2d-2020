@@ -1,18 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Platform2DUtils.MemorySystem;
 
 public class NewGame : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    InputField fileName;
+    [SerializeField]
+    Button btnNewGame;
+
+    void Awake()
     {
-        
+        btnNewGame.onClick.AddListener(Save);
     }
 
-    // Update is called once per frame
-    void Update()
+    void Save()
     {
-        
+        if(string.IsNullOrEmpty(fileName.text)) return;
+        MemorySystem.SaveData(Gamemanager.instance.gameData, fileName.text);
+        gameObject.SetActive(false);
     }
+    
 }

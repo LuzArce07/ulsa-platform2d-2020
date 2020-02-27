@@ -6,7 +6,6 @@ using System.IO;
 
 namespace Platform2DUtils.MemorySystem
 {
-
     public class MemorySystem 
     {
 
@@ -14,15 +13,23 @@ namespace Platform2DUtils.MemorySystem
 
         public static void SaveData(GameData gameData)
         {
-            
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Create(path);
             string json = JsonUtility.ToJson(gameData);
             bf.Serialize(file, json);
             file.Close();
             Debug.Log(path);
+        }
 
-            
+        public static void SaveData(GameData gameData, string fileName)
+        {
+            string path = $"{Application.persistentDataPath}/{fileName}.data";
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(path);
+            string json = JsonUtility.ToJson(gameData);
+            bf.Serialize(file, json);
+            file.Close();
+            Debug.Log(path);
         }
 
         public static bool DataExist
@@ -47,12 +54,8 @@ namespace Platform2DUtils.MemorySystem
         public static void DeleteData()
         {
             if(DataExist) File.Delete(path);
-
-
         }
-
-
+        
     }
-
 
 }
