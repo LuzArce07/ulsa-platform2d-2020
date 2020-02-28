@@ -9,6 +9,11 @@ namespace Platform2DUtils.MemorySystem
     public class MemorySystem 
     {
 
+        public static string SavePath
+        {
+            get => $"{Application.persistentDataPath}/";
+        }
+
         static string path = $"{Application.persistentDataPath}/myGame.data";
 
         public static void SaveData(GameData gameData)
