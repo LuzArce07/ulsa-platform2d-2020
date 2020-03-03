@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-   
     [SerializeField]
     Button btnNewGame;
     [SerializeField]
@@ -52,12 +51,11 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
-    public void LoadScene()
+    void LoadScene()
     {
         SceneManager.LoadScene(1);
         btnLoadGame.gameObject.SetActive(false);
         Gamemanager.instance.Score.gameObject.SetActive(true);
         gameObject.SetActive(false);
     }
-
 }
