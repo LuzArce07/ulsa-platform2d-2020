@@ -10,8 +10,9 @@ public class SearchSaves : MonoBehaviour
     
     [SerializeField]
     GameObject container;
+
     [SerializeField]
-    Text content;
+    GameObject srcSaveObject;
 
     
     void OnEnable()
@@ -22,7 +23,11 @@ public class SearchSaves : MonoBehaviour
 
         foreach(FileInfo f in fileInfo)
         {
-            Debug.Log(f);
+            //Debug.Log(f);
+            GameObject save = Instantiate(srcSaveObject, Vector3.zero, Quaternion.identity) as GameObject;
+            SaveObject saveObject = save.GetComponent<SaveObject>();
+            saveObject.fileName = f.Name;
+            saveObject.transform.parent = container.transform;
         }
     
     

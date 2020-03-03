@@ -1312,7 +1312,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   container: {fileID: 2125948261}
-  content: {fileID: 0}
+  srcSaveObject: {fileID: 3602094182962400419, guid: 519580b570df3e4408662c114f3b4311,
+    type: 3}
 --- !u!1 &2125948261 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3202238211529258124, guid: e02b962e3846fd14c80a73a726fca046,

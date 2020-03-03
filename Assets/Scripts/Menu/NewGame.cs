@@ -8,6 +8,7 @@ public class NewGame : MonoBehaviour
 {
     [SerializeField]
     InputField fileName;
+    
     [SerializeField]
     Button btnNewGame;
 
